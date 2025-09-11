@@ -1,0 +1,1493 @@
+/* HERO SECTION */
+.hero {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 50px; /* laptop default */
+  text-align: left;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+/* Main Heading */
+.hero h1 {
+  font-weight: 900;
+  color: #000c40;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: left;
+  white-space: nowrap; /* large screens no wrap */
+}
+
+/* Subheading */
+.hero h2 {
+  font-weight: 600;
+  color: #000c40;
+  margin-bottom: 20px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* Paragraph */
+.hero p {
+  font-weight: 400;
+  color: #1a1a1a;
+  max-width: 700px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* Apply Button */
+.hero .apply-btn {
+  display: inline-block;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #000c40, #00509e);
+  border: 2px solid #000c40;
+  border-radius: 8px;
+  padding: 10px 28px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover */
+.hero .apply-btn:hover {
+  background: linear-gradient(90deg, #001a66, #4ad3ff);
+}
+
+/* RESPONSIVE HERO */
+@media (max-width: 1366px) {
+  .hero { padding: 50px 40px; }
+  .hero h1 { font-size: 60px; }
+  .hero h2 { font-size: 26px; }
+  .hero p { font-size: 16px; }
+}
+
+@media (max-width: 1024px) {
+  .hero { padding: 40px 30px; }
+  .hero h1 { font-size: 48px; white-space: normal; }
+  .hero h2 { font-size: 22px; white-space: normal; }
+  .hero p { font-size: 15px; }
+}
+
+@media (max-width: 768px) {
+  .hero { padding: 30px 24px; }
+  .hero h1 { font-size: 36px; }
+  .hero h2 { font-size: 18px; }
+  .hero p { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  .hero { padding: 20px 16px; }
+  .hero h1 { font-size: 28px; }
+  .hero h2 { font-size: 16px; }
+  .hero p { font-size: 13px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* IMPACT SECTION */
+.impact {
+  background: linear-gradient(180deg, #000c40, #001a66);
+  color: #fff;
+  padding: 50px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.impact-header {
+  max-width: 1200px; /* keeps content aligned with logo grid */
+  margin: 0 auto;
+  
+}
+
+.impact-header h2 {
+  font-weight: 800;
+  font-size: clamp(30px, 4vw, 42px);
+  margin-bottom: 20px;
+  color: #f4f4f4;
+  
+}
+
+.impact-header p {
+  font-weight: 400;
+  margin-bottom: 50px;
+  color: #f4f4f4;
+}
+
+/* Stats Grid */
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.impact-item {
+  background: linear-gradient(180deg, #001a66, #000c40);
+  border-radius: 16px;
+  border: 2px solid #4ad3ff;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.impact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.impact-item i {
+  font-size: 40px;
+  margin-bottom: 16px;
+  color: #4ad3ff;
+}
+
+.impact-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #f4f4f4;
+}
+
+.impact-item p {
+  font-size: 15px;
+  color: #cccccc;
+}
+
+/* Footer text */
+.impact-footer {
+  margin-top: 30px;
+  font-size: 16px;
+  opacity: 0.9;
+  max-width: 1200px;   /* same as cards grid */
+  margin-left: auto;
+  margin-right: auto;   /* centers the text */
+}
+
+.impact-footer-p {
+  font-size: 16px;
+  opacity: 0.9;
+  max-width: 1200px;   /* same as cards grid */
+  margin-left: auto;
+  margin-right: auto;   /* centers the text */
+}
+
+/* Responsive Impact */
+@media (max-width: 1024px) {
+  .impact { padding: 40px 40px; }
+  .impact-stats { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .impact-item { padding: 30px 16px; }
+  .impact-item i { font-size: 32px; }
+}
+
+@media (max-width: 768px) {
+  .impact { padding: 30px 24px; }
+  .impact-item { padding: 28px 16px; }
+}
+
+@media (max-width: 480px) {
+  .impact { padding: 20px 16px; }
+  .impact-item { padding: 20px 12px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ABOUT SECTION */
+.about-section {
+  background: #e5e7eb;
+  padding: 50px 50px;
+  text-align: left;
+}
+
+.about-card {
+  background: linear-gradient(135deg, #001a66, #000c40);
+  border-radius: 20px 20px 0 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background: #e5e7eb;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.about-text h2 {
+  font-weight: 800;
+  color: #001a66;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-weight: 400;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #000c40, #00509e);
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background: linear-gradient(90deg, #001a66, #4ad3ff);
+}
+
+/* Right Image */
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+}
+
+/* Responsive About */
+@media (max-width: 1024px) {
+  .about-section { padding: 40px 40px; }
+  .about-content { grid-template-columns: 1fr; text-align: left; padding: 20px; }
+  .about-image { order: -1; margin-bottom: 20px; }
+  .about-text h2 { font-size: 28px; }
+  .about-text p { font-size: 16px; }
+}
+
+@media (max-width: 768px) {
+  .about-section { padding: 30px 24px; }
+  .about-text h2 { font-size: 24px; }
+  .about-text p { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  .about-section { padding: 20px 16px; }
+  .about-text h2 { font-size: 20px; }
+  .about-text p { font-size: 13px; }
+}
+
+/* NAVIGATION WRAPPER (blue strip background) */
+.about-nav-wrapper {
+  background: #001a66;
+  border-radius: 0 0 12px 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px;
+  position: relative;
+  overflow: hidden; /* important for fading edges */
+}
+
+/* FADING EDGES for about-nav */
+@media (max-width: 1023px) {
+  .about-nav-wrapper::before,
+  .about-nav-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 45px; /* adjust width for fade size */
+    height: 100%;
+    z-index: 5;
+    pointer-events: none;
+  }
+
+  .about-nav-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, #001a66 80%, transparent);
+  }
+
+  .about-nav-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, #001a66 80%, transparent);
+  }
+}
+
+
+/* INNER BOX REMOVED */
+.about-nav-inner {
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  padding: 8px 10px;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* NAV FLEX */
+.about-nav {
+  display: flex;
+  gap: 14px;
+  transition: transform 0.35s ease;
+  will-change: transform;
+}
+.about-nav::-webkit-scrollbar { display: none; }
+
+/* NAV ITEMS */
+.about-nav a {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #001a66;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 10px;
+  background: #fff;
+  transition: all 0.3s ease;
+  flex: 0 0 auto;
+  border: 2px solid #001a66;
+}
+
+.about-nav a.active {
+  background: #001a66 !important;
+  color: #fff !important;
+  border-color: #4ad3ff !important;
+}
+
+
+/* Hover effect for inactive buttons */
+.about-nav a:not(.active):hover {
+  background: #001a66;
+  color: #fff;
+  border-color: #fff;
+}
+
+/* DESKTOP (≥1024px): show all 3 */
+@media (min-width: 1024px) {
+  .about-nav { transform: translateX(0) !important; }
+  .about-nav a { flex-basis: calc(33.33% - 9.3px); }
+  .nav-arrow { display: none !important; }
+}
+
+/* TABLET (769px–1023px): show 2 */
+@media (max-width: 1023px) and (min-width: 769px) {
+  .about-nav a { flex-basis: calc(50% - 7px); font-size: 16px; }
+}
+
+/* MOBILE (≤768px): show 1 */
+@media (max-width: 768px) {
+  .about-nav a { flex-basis: 100%; font-size: 15px; }
+}
+
+/* ARROWS (smaller size) */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #001a66;
+  cursor: pointer;
+  background: #fff;
+  border: 0;
+  border-radius: 50%;
+  padding: 4px 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  display: none;
+  line-height: 1;
+  z-index: 10;
+}
+.nav-arrow.left { left: 8px; }
+.nav-arrow.right { right: 8px; }
+
+@media (max-width: 1023px) {
+  .nav-arrow { display: inline-flex; align-items: center; justify-content: center; }
+  .about-nav-inner { padding: 8px 40px; }
+}
+
+
+
+
+
+
+
+/* SERVICES SECTION (Impact style) */
+.services {
+  background: linear-gradient(180deg, #000c40, #001a66);
+  padding: 60px 50px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #f4f4f4;
+}
+
+.services-header { 
+  max-width: 1300px;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.services-header h2,
+.services-header p {
+  max-width: 800px;
+  text-align: left;
+}
+
+.services-header h2 {
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #f4f4f4;
+}
+
+.services-header p {
+  font-size: clamp(15px, 2.5vw, 20px);
+  color: #cccccc;
+  margin-bottom: 40px;
+}
+
+/* Desktop & Tablet → Horizontal Scroll with 2 rows (base layout) */
+.services-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  grid-auto-flow: column;             /* fill columns first for horizontal scrolling */
+  gap: 24px;
+  overflow-x: auto;                   /* horizontal scroll */
+  scroll-snap-type: x mandatory;
+  padding-bottom: 12px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Card base (desktop/tablet) */
+.service-card {
+  background: linear-gradient(180deg, #001a66, #000c40);
+  border: 2px solid #4ad3ff;
+  border-radius: 16px;
+  padding: 32px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  min-width: 270px;      /* desktop/tablet safeguard */
+  scroll-snap-align: start;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.service-card i { font-size: 36px; margin-bottom: 16px; color: #4ad3ff; }
+.service-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 10px; color: #f4f4f4; }
+.service-card p  { font-size: 14px; color: #cccccc; }
+
+/* Desktop — show 4 cards worth */
+@media (min-width: 1025px) {
+  .services-grid {
+    max-width: calc(4 * 300px); /* approx width for 4 visible cards */
+    padding-top: 10px;
+  }
+}
+
+/* Tablet — 3 cards visible per row (2 rows), horizontal scroll */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .services-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: column;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    max-width: calc(3 * 300px); /* show ~3 cards width */
+    padding-bottom: 12px;
+  }
+
+  .service-card {
+    min-width: 280px;
+    max-width: 300px;
+    scroll-snap-align: start;
+  }
+}
+
+/* MOBILE — 2 cards per row, vertical scrolling (max 6 visible) */
+/* IMPORTANT: override grid-auto-flow and override min-width so two columns are possible */
+@media (max-width: 768px) {
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two columns */
+    grid-auto-flow: row;                    /* ensure row-wise placement */
+    gap: 16px;
+    overflow-y: auto;                       /* vertical scroll */
+    overflow-x: hidden;
+    max-height: calc(3 * 190px);            /* 3 rows × 2 cols = 6 cards visible */
+    padding-bottom: 8px;
+    padding-top: 10px;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: none;
+    min-width: 0;      /* <--- critical: allows 2-per-row on narrow screens */
+    padding: 24px 16px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    padding: 16px 12px;        /* less padding */
+    aspect-ratio: 1 / 1;       /* perfect square on mobile */
+    min-width: 0;              /* allows 2 cards per row */
+    width: 100%;
+    max-width: none;
+  }
+
+  .service-card i {
+    font-size: 26px;           /* smaller icons */
+    margin-bottom: 8px;
+  }
+
+  .service-card h3 {
+    font-size: 14px;           /* smaller heading */
+    margin-bottom: 6px;
+  }
+
+  .service-card p {
+    font-size: 12px;           /* smaller description */
+    line-height: 1.3;
+  }
+}
+
+/* Hide scrollbar (optional) */
+.services-grid::-webkit-scrollbar { display: none; }
+
+/* Match impact padding on very small screens */
+@media (max-width: 480px) {
+  .services {
+    padding: 20px 16px; /* same as impact section */
+  }
+}
+
+/* Hide scrollbar (optional) */
+.services-grid::-webkit-scrollbar { display: none; }
+
+
+
+
+
+/* PORTFOLIO SECTION */
+.portfolio {
+  padding: 80px 40px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left; /* ensures text stays left */
+}
+
+.portfolio-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px; /* default horizontal gap for desktop */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Side */
+.portfolio-left {
+  flex: 1;
+  text-align: left; /* force left text alignment */
+}
+
+.portfolio-left h2 {
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 800;
+  color: #000c40;
+  margin-bottom: 10px;
+}
+
+.portfolio-left p {
+  font-size: clamp(15px, 2.5vw, 20px);
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.portfolio-btn {
+  background: linear-gradient(135deg, #001a66, #000c40);
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.portfolio-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Side */
+.portfolio-right {
+  flex: 1;
+  text-align: center; /* center image */
+}
+
+.portfolio-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .portfolio-container {
+    flex-direction: column; /* stack vertically */
+    align-items: flex-start; /* align everything to left */
+    gap: 16px; /* reduce vertical gap */
+  }
+
+  /* Image appears first */
+  .portfolio-right {
+    order: -1;
+    text-align: left; /* left align image */
+    margin-bottom: 0; /* remove extra margin */
+  }
+
+  .portfolio-left {
+    flex: none;
+    width: 100%;
+    text-align: left; /* keep text left */
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 24px 16px; /* match smaller sections */
+  }
+}
+
+
+
+
+/* =========================
+   MENTORS SECTION
+========================= */
+.mentors {
+  padding: 80px 40px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+/* Header */
+.mentors-header h2 {
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 800;
+  color: #000c40;
+  margin-bottom: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mentors-header p {
+  font-size: 18px;
+  text-align: left;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/* Mentor Cards Grid - Desktop default */
+.mentors-grid {
+  display: flex;           /* flex for easier horizontal scroll on smaller screens */
+  flex-wrap: wrap;         /* wrap for desktop */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+/* Individual Mentor Card */
+.mentor-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 16px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+  text-align: center;
+  flex: 0 0 23%;           /* Desktop: 4 cards per row (approx 23% + gaps) */
+  box-sizing: border-box;
+}
+
+.mentor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.mentor-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  border: 3px solid #001a66;
+}
+
+.mentor-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #001a66;
+  margin-bottom: 8px;
+}
+
+.mentor-card p {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* LinkedIn Icon */
+.mentor-card a {
+  color: #0077b5;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+.mentor-card a:hover {
+  color: #005582;
+}
+
+/* =========================
+   Tablet (2 cards visible + horizontal scroll)
+========================= */
+@media (max-width: 1024px) {
+  .mentors-grid {
+    flex-wrap: nowrap;           /* prevent wrapping */
+    overflow-x: auto;            /* enable horizontal scroll */
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+  }
+
+ .mentor-card {
+  flex: 0 0 32%; /* 3 cards visible */
+  min-width: 32%;
+  scroll-snap-align: start;
+}
+
+
+  /* Hide scrollbar */
+  .mentors-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .mentors-grid {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* =========================
+   Mobile (1 card visible + horizontal scroll)
+========================= */
+@media (max-width: 768px) {
+  .mentors-grid {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+  }
+
+  .mentor-card {
+    flex: 0 0 90%;              /* 1 card visible */
+    min-width: 90%;
+    scroll-snap-align: start;
+  }
+}
+
+/* =========================
+   Left-Right Section (Text + Illustration)
+========================= */
+.mentors-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto 0;
+  flex-wrap: wrap;
+}
+
+.mentors-left {
+  flex: 1;
+  text-align: left;
+}
+
+.mentors-left p {
+  font-size: clamp(15px, 2.5vw, 18px);
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.mentors-btn {
+  background: linear-gradient(135deg, #001a66, #000c40);
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.mentors-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.mentors-right {
+  flex: 1;
+  text-align: center;
+}
+
+.mentors-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Extra small screens padding */
+@media (max-width: 480px) {
+  .mentors {
+    padding: 40px 20px;
+  }
+}
+
+
+
+
+
+
+.investors {
+  background: #e5e7eb;
+  padding: 80px 40px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left; /* ensures text stays left */
+}
+
+.investors-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Side */
+.investors-left {
+  flex: 1;
+  text-align: left; /* force left text alignment */
+}
+
+.investors-left h2 {
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 800;
+  color: #000c40;
+  margin-bottom: 10px;
+}
+
+.investors-left p {
+  font-size: clamp(15px, 2.5vw, 20px);
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.investors-btn {
+  background: linear-gradient(135deg, #001a66, #000c40);
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.investors-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Side */
+.investors-right {
+  flex: 1;
+  text-align: center; /* center image */
+}
+
+.investors-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .investors-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px; /* reduce gap for vertical stacking */
+  }
+
+  .investors-right {
+    order: -1;
+    text-align: left;
+    margin-bottom: 0; /* optional: remove extra margin */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .investors {
+    padding: 24px 16px; /* match smaller sections */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   SECTORS SECTION (Impact style like Services)
+========================= */
+.sectors-modern {
+  background: linear-gradient(180deg, #000c40, #001a66);
+  padding: 60px 50px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #f4f4f4;
+}
+
+/* Header */
+.sectors-header {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+.sectors-header h2 {
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 800;
+  color: #f4f4f4;
+  margin-bottom: 12px;
+}
+
+.sectors-header p {
+  font-size: clamp(15px, 2.5vw, 20px);
+  color: #cccccc;
+  margin-bottom: 40px;
+}
+
+/* Desktop & Tablet → Horizontal Scroll with 2 rows (base layout) */
+.sectors-row {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  grid-auto-flow: column;             /* fill columns first */
+  gap: 24px;
+  overflow-x: auto;                   /* horizontal scroll */
+  scroll-snap-type: x mandatory;
+  padding-bottom: 12px;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Card base (desktop/tablet) */
+.sector-card {
+  background: linear-gradient(180deg, #001a66, #000c40);
+  border: 2px solid #4ad3ff;
+  border-radius: 16px;
+  padding: 32px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 270px;      /* desktop/tablet safeguard */
+  scroll-snap-align: start;
+  flex: 0 0 280px;      /* fixed width, no stretching */
+  max-width: 300px;
+  height: 100%;       
+}
+
+.sector-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.sector-card i { font-size: 36px; margin-bottom: 16px; color: #4ad3ff; }
+.sector-card span { font-size: 14px; color: #cccccc; text-align: center; margin-top: 6px; }
+
+/* Desktop — show 4 cards worth */
+@media (min-width: 1025px) {
+  .sectors-row {
+    max-width: calc(4 * 280px + 3 * 24px); /* 4 cards + 3 gaps */
+    padding-top: 10px;
+  }
+
+  .sector-card {
+    max-width: 300px;
+    flex: 1;
+  }
+}
+
+/* Tablet — 3 cards visible per row (2 rows), horizontal scroll */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .sectors-row {
+    max-width: calc(3 * 300px);
+  }
+
+  .sector-card {
+    min-width: 280px;
+    max-width: 300px;
+  }
+}
+
+/* MOBILE — 2 cards per row, vertical scrolling (max 6 visible) */
+@media (max-width: 768px) {
+  .sectors-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    gap: 16px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(3 * 190px);  /* 3 rows × 2 cols = 6 cards visible */
+    padding-bottom: 8px;
+    padding-top: 10px;
+  }
+
+  .sector-card {
+    width: 100%;
+    max-width: none;
+    min-width: 0;      /* allows 2-per-row on narrow screens */
+    padding: 24px 16px;
+    box-sizing: border-box;
+    aspect-ratio: 1 / 1;  /* perfect square on mobile */
+  }
+
+  .sector-card i {
+    font-size: 26px;           /* smaller icons */
+    margin-bottom: 8px;
+  }
+
+  .sector-card span {
+    font-size: 12px;           /* smaller text */
+    line-height: 1.3;
+  }
+}
+
+/* Hide scrollbar (optional) */
+.sectors-row::-webkit-scrollbar { display: none; }
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .sectors-modern {
+    padding: 20px 16px; /* match impact section */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Infrastructure Section */
+.infrastructure {
+  padding: 50px 40px;
+  background: #e5e7eb;
+  font-family: 'Poppins', sans-serif;
+}
+
+.infra-header {
+  text-align: left;  /* align text left */
+  max-width: 1200px; /* keep content centered inside page */
+  margin: 0 auto 40px;
+}
+
+.infra-header h2 {
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 800;
+  color: #000c40;
+  margin-bottom: 8px;
+}
+
+.infra-header p {
+  font-size: clamp(14px, 2vw, 18px);
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Container with marquee + buttons */
+.infra-marquee-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px; /* space between marquee box and button(s) */
+}
+
+/* Box containing logos */
+.infra-marquee-wrap {
+  overflow: hidden;
+  max-width: 1150px; /* shrink width a little */
+  border-radius: 12px;
+
+  background: #fff;
+  border: 2px solid #000c40;
+}
+
+/* Infinite scrolling logos */
+.infra-marquee {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  animation: scrollLeft 30s linear infinite;
+  width: max-content; /* ✅ Needed for seamless loop */
+}
+
+.infra-marquee img {
+  height: 100px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+}
+
+.infra-marquee img:hover {
+  filter: grayscale(0);
+}
+
+/* Keyframes for infinite right→left scroll */
+@keyframes scrollLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* ✅ works with duplicated logos */
+}
+
+/* Controls (buttons) */
+.infra-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Base button style */
+.infra-toggle {
+  background: #001a66;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+
+.infra-toggle:hover {
+  background: #000c40;
+}
+
+
+
+
+
+
+/* =========================
+   TESTIMONIALS SECTION
+========================= */
+.testimonials {
+  padding: 50px 40px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left; /* ensures text stays left */
+}
+
+.testimonials-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px; /* default horizontal gap for desktop */
+  max-width: 1200px;
+  margin: 0 auto;
+  /* removed padding to match Portfolio exactly */
+}
+
+/* Left Side */
+.testimonials-left {
+  flex: 1;
+  text-align: left; /* force left text alignment */
+}
+
+.testimonials-left h2 {
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 800;
+  color: #000c40;
+  margin-bottom: 10px;
+}
+
+.testimonials-left p {
+  font-size: clamp(15px, 2.5vw, 20px);
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.testimonials-btn {
+  background: linear-gradient(135deg, #001a66, #000c40);
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.testimonials-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Side */
+.testimonials-right {
+  flex: 1;
+  text-align: center; /* center image */
+}
+
+.testimonials-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .testimonials-container {
+    flex-direction: column; /* stack vertically */
+    align-items: flex-start; /* align everything to left */
+    gap: 16px; /* reduce vertical gap */
+  }
+
+  /* Image appears first */
+  .testimonials-right {
+    order: -1;
+    text-align: left; /* left align image */
+    margin-bottom: 0; /* remove extra margin */
+  }
+
+  .testimonials-left {
+    flex: none;
+    width: 100%;
+    text-align: left; /* keep text left */
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 24px 16px; /* match smaller sections */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* WE HAVE WORKED WITH */
+.worked-with {
+  background: linear-gradient(180deg, #001a66, #000c40);
+  padding: 50px 50px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.worked-header {
+  max-width: 1200px; /* keeps content aligned with logo grid */
+  margin: 0 auto;
+}
+
+.worked-header h2,
+.worked-header p {
+  text-align: left;
+}
+
+.worked-header h2 {
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #e5e7eb;
+}
+
+.worked-header p {
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: #e5e7eb;
+  margin-bottom: 60px;
+}
+
+/* =========================
+   Logo Grid (Desktop Default)
+========================= */
+.worked-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+/* Logo Card */
+.logo-card {
+  width: 100%;
+  max-width: 180px;
+  height: 120px;
+  background: #fff;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  flex: 0 0 auto; /* ✅ important for horizontal scroll */
+}
+
+.logo-card img {
+  max-width: 140px;
+  max-height: 80px;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+/* Hover Effects */
+.logo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.logo-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Desktop — 5 cards visible, 2 rows, horizontal scroll */
+@media (min-width: 1025px) {
+  .worked-logos {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    grid-auto-flow: column;             /* fill columns horizontally */
+    gap: 24px;
+    overflow-x: auto;                   /* horizontal scroll */
+    scroll-snap-type: x mandatory;
+  /* show 5 cards width approx */
+    padding-bottom: 12px;
+    padding-top: 10px;
+  }
+
+  .logo-card {
+    min-width: 180px; /* ensures consistent width */
+    max-width: 180px;
+    scroll-snap-align: start;
+  }
+}
+
+/* Tablet — 4 cards visible per row (2 rows), horizontal scroll */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .worked-logos {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);  /* 2 rows */
+    grid-auto-flow: column;              /* fill columns horizontally */
+    gap: 24px;
+    overflow-x: auto;                    /* horizontal scroll */
+    scroll-snap-type: x mandatory;
+    padding-bottom: 12px;
+    padding-top: 10px;
+  }
+
+  .logo-card {
+    min-width: 180px;
+    max-width: 180px;
+    scroll-snap-align: start;
+  }
+}
+
+
+/* =========================
+   Responsive Mode (≤768px)
+========================= */
+@media (max-width: 768px) {
+  .worked-logos {
+    display: flex;              /* flex instead of grid */
+    overflow-x: auto;           /* enable horizontal scroll */
+    gap: 20px;
+    scroll-snap-type: x mandatory; /* smooth snap scrolling */
+    flex-wrap: wrap;
+    max-height: calc(3 * 150px); /* approx 3 boxes tall */
+    padding: 10px;
+  }
+
+  .logo-card {
+    flex: 0 0 calc(50% - 10px);
+    scroll-snap-align: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .worked-with {
+    padding: 24px 16px; /* match other sections on mobile */
+  }
+}
+
+/* =========================
+   Optional: Hide scrollbar
+========================= */
+.worked-logos::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,213 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #e5e7eb; }
+
+/* Top Bar */
+.topbar {
+  background: linear-gradient(90deg, #000c40, #004080); /* ✅ Gradient top bar */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 20px;
+  font-size: 13px;
+}
+.topbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+.topbar-left i { margin-right: 6px; }
+.topbar-right a { margin-left: 10px; font-size: 15px; }
+
+.separator {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Navbar (Header) */
+.navbar {
+  background: linear-gradient(90deg, #000c40, #001a66); /* ✅ Gradient navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: #4ad3ff;
+}
+.logo img {
+  height: 44px;
+  display: block;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 22px;
+  margin-left: auto;   /* pushes links to the right */
+}
+
+/* Navbar links with hover underline effect */
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: #4ad3ff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+.nav-links a:hover {
+  color: #4ad3ff;
+}
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  z-index: 900;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background: linear-gradient(180deg, #000c40, #002060); /* ✅ Gradient sidebar */
+  padding: 15px;
+  transition: 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar.open { left: 0; }
+
+/* Top row: logo + close button */
+.sidebar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar-top .sidebar-logo img {
+  height: 40px;
+  display: block;
+}
+.close-btn {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 6px;
+}
+
+/* Sidebar links */
+.sidebar-links {
+  list-style: none;
+  margin: 15px 0;
+}
+.sidebar-links li { margin: 10px 0; }
+.sidebar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* Sidebar email */
+.sidebar-email { margin: 12px 0; }
+.sidebar-email a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+
+/* Sidebar socials */
+.sidebar-socials { margin-top: 12px; }
+.sidebar-socials a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 18px;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+
+/* Separator inside sidebar */
+.sidebar hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 10px 0;
+}
+
+/* Phone & Tablet: Hide topbar and nav-links → show hamburger */
+@media (max-width: 1024px) {
+  .topbar { display: none; }
+  .nav-links { display: none; }
+  .hamburger { display: block; }
+}
+
+/* Desktop/Laptop: show full navbar + larger sizes */
+@media (min-width: 1025px) {
+  .logo img {
+    height: 52px;   /* bigger logo */
+  }
+  .nav-links {
+    margin-left: auto; /* force links fully right */
+    gap: 18px;         /* reduced gap */
+  }
+  .nav-links a {
+    font-size: 15px;   /* reduced from 18px */
+    padding: 6px 10px;
+  }
+  .navbar {
+    padding: 16px 40px;
+  }
+  .topbar {
+    font-size: 14px;
+    padding: 8px 30px;
+    display: flex; /* visible only here */
+  }
+  .topbar-right a { font-size: 15px; }
+}
